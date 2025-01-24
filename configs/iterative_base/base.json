@@ -1,0 +1,31 @@
+{
+    "layers": 28,
+    "d_model": 4096,
+    "n_heads": 16,
+    "n_vocab": 50400,
+    "norm": "layernorm",
+
+
+    "gradient_accumulation_steps": 2,
+    "warmup_steps": 100,
+
+
+    "lr": 1e-06,
+    "end_lr": 1e-06,
+    "weight_decay": 0.0,
+    "total_steps": 383500,
+
+    "model_dir": "full_qa_4",
+    "train_set": "qa_train_4.index",
+    "val_set": {
+      "index": "qa.val.index"
+    },
+
+    "val_batches":100,
+
+    "wandb_project": "full_6",
+
+    "target_save_folder": "commonsenseqa/iterative_full/iterative_full_0",
+    "target_save": "commonsenseqa/iterative_negative_fast/iterative_negative_fast_0/iterative_negative_fast_0.txt"
+
+}
